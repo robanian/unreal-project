@@ -15,10 +15,7 @@
 	<name>unrealDemo</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>11</java.version>
-
-		<!-- Maven Configuration Problem 해결 -->
-		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
+		<java.version>1.8.0</java.version>
 	</properties>
 	<dependencies>
 		<!-- Thymeleaf -->
@@ -108,6 +105,20 @@
 				<plugin>
 					<groupId>org.springframework.boot</groupId>
 					<artifactId>spring-boot-maven-plugin</artifactId>
+				</plugin>
+
+				<plugin>
+					<!-- Build an executable JAR -->
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-jar-plugin</artifactId>
+					<version>3.1.0</version>
+					<configuration>
+						<archive>
+							<manifest>
+								<mainClass>com.thezoom.works.UnrealDemoApplication</mainClass>
+							</manifest>
+						</archive>
+					</configuration>
 				</plugin>
 			</plugins>
 		</pluginManagement>
