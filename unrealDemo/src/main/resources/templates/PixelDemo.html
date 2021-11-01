@@ -9,13 +9,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <link type="text/css" rel="stylesheet" href="/player.css">
+    <link type="text/css" rel="stylesheet" href="/pixel/player.css">
     <script src="socket.io.js"></script>
     <script type="text/javascript" src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
-    <script type="text/javascript" src="/scripts/webRtcPlayer.js"></script>
-    <script type="text/javascript" src="/scripts/app.js"></script>
-    <script type="text/javascript" src="PixelDemo.js"></script>
-    <link type="text/css" rel="stylesheet" href="PixelDemo.css">
+    <script type="text/javascript" src="/pixel/scripts/webRtcPlayer.js"></script>
+    <script type="text/javascript" src="/pixel/scripts/app.js"></script>
+    <script type="text/javascript" src="/pixel/PixelDemo.js"></script>
+    <link type="text/css" rel="stylesheet" href="/pixel/PixelDemo.css">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <!-- For iPhone X the following makes it use the entire screen space for the webpage https://webkit.org/blog/7929/designing-websites-for-iphone-x/ -->
     <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
@@ -27,7 +27,7 @@
             <div id="sidebarContent">
                 <div class="sidebar-header">
                     <!--<h3>Configuration</h3>-->
-                    <img src="images/UE4_Logo.png" width="200px" />
+                    <img src="/pixel/images/UE4_Logo.png" width="200px" />
                 </div>
 
                 <ul id="sidebarlist" class="list-unstyled components">
@@ -37,31 +37,31 @@
                         <ul class="collapse list-unstyled" id="charSubmenu">
                             <li>
                                 <a href="#" onclick="onConfigButton(0,0)">
-                                    <img src="images/Aurora.png" width="150px" />
+                                    <img src="/pixel/images/Aurora.png" width="150px" />
                                     <h2><span>Aurora</span></h2>
                                 </a>
                             </li>
                             <li>
                                 <a href="#" onclick="onConfigButton(0,1)">
-                                    <img src="images/Crunch.png" width="150px" />
+                                    <img src="/pixel/images/Crunch.png" width="150px" />
                                     <h2><span>Crunch</span></h2>
                                 </a>
                             </li>
                             <li>
                                 <a href="#" onclick="onConfigButton(0,2)">
-                                    <img src="images/Drongo.png" width="150px" />
+                                    <img src="/pixel/images/Drongo.png" width="150px" />
                                     <h2><span>Drongo</span></h2>
                                 </a>
                             </li>
                             <li>
                                 <a href="#" onclick="onConfigButton(0,3)">
-                                    <img src="images/Greystone.png" width="150px" />
+                                    <img src="/pixel/images/Greystone.png" width="150px" />
                                     <h2><span>Greystone</span></h2>
                                 </a>
                             </li>
                             <li>
                                 <a href="#" onclick="onConfigButton(0,4)">
-                                    <img src="images/Kallari.png" width="150px" />
+                                    <img src="/pixel/images/Kallari.png" width="150px" />
                                     <h2><span>Kallari</span></h2>
                                 </a>
                             </li>
@@ -153,10 +153,12 @@
                             <button id="1080p" type="button" class="btn btn-secondary" onclick="setRes(1920, 1080)">
                                 <span>1080p</span>
                             </button>
-
+                            
+                            <!--
                             <button id="4k" type="button" class="btn btn-secondary" onclick="setRes(3840, 2160)">
                                 <span>4k</span>
                             </button>
+                            -->
                         </div>
                     </div>
                     <div class="btn-group btn-group-lg btn-group-toggle" data-toggle="buttons" role="group">
@@ -216,7 +218,7 @@
                             <!--<div id="button" type="button" onclick="onConfigurationOne()">Option One</div>
                             <div id="button" type="button" onclick="onConfigurationTwo()">Option Two</div>-->
                             <div id="ck-fullscreen">
-                                <img src="images/MaximiseToFullscreen.png" alt="Maximise to Fullscreen" id="fullscreen-img" class="fullscreen-btn">
+                                <img src="/pixel/images/MaximiseToFullscreen.png" alt="Maximise to Fullscreen" id="fullscreen-img" class="fullscreen-btn">
                             </div>
                         </div>
                     </div>
